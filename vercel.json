@@ -1,15 +1,15 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "api/posts.js",
-      "use": "@vercel/node"
+  "functions": {
+    "api/posts.mjs": {
+      "memory": 1024,
+      "maxDuration": 30
     }
-  ],
+  },
   "routes": [
     {
       "src": "/api/posts",
-      "dest": "/api/posts.js"
+      "dest": "/api/posts.mjs"
     }
   ]
 }
