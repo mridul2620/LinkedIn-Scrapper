@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "description": "",
+  "type": "module",
   "dependencies": {
     "@sparticuz/chromium": "^137.0.1",
     "axios": "^1.10.0",
